@@ -1,0 +1,1 @@
+define("main/main",["app/hello","app/world"],function(a){var b=a("app/hello");alert(b.increment(10))});

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>use grunt build seajs project</title>
+</head>
+<body>
+	<div id="thediv">  
+  	  <p>hello world</p>  
+	</div>  
+  
+	<!--original base: seajs_test/static/3rd-lib-->  
+	<script src="../static/3rd-lib/sea.js" id="seajsnode"></script>  
+	<script>  
+	  
+	    seajs.config({  
+	        base: "../static", // set base to seajs_test/static  
+	        alias: {"main": "main/main"}  
+	    })  
+	  
+	    seajs.use("main");// it's a top-level identifier  
+	  
+	</script>  
+</body>
+</html>

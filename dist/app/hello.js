@@ -1,0 +1,1 @@
+define("app/hello",["app/world"],function(a,b){var c=a("app/world");b.increment=function(a){return c.add(a,1)}}),define("app/world",[],function(a,b){b.add=function(a,b){return a+b}});
